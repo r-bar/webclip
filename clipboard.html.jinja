@@ -1,0 +1,22 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>Clipboard</title>
+    <style>
+    pre {
+      background-color: lightgrey;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Clipboard</h1>
+    <form method="post">
+      <label for="new-content">Upload new dat to the clipboard:</label>
+      <br>
+      <textarea id="new-content" name="data" rows="24" cols="80"></textarea>
+      <br>
+      <button>Copy</button>
+    </form>
+    <pre><code>{{ data }}</code></pre>
+  </body>
+</html>
