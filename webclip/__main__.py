@@ -30,12 +30,12 @@ class ClipboardBackend(abc.ABC):
     @abc.abstractmethod
     def copy(self, data):
         """Write data to the clipboard"""
-        raise NotImplemented
+        raise NotImplementedError
 
     @abc.abstractmethod
     def paste(self, ):
         """Ouput the contents of the clipboarrd"""
-        raise NotImplemented
+        raise NotImplementedError
 
 
 class TmuxBuffer(ClipboardBackend):
@@ -55,9 +55,6 @@ class TmuxBuffer(ClipboardBackend):
     def paste(self):
         process = subprocess.run(['tmux', 'save', '-'], check=True,
                                  capture_output=True)
-        if process.returncode != 0:
-            raise Exception('Error getting clipboard data')
-
         return process.stdout
 
 
