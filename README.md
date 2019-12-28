@@ -2,9 +2,19 @@
 A simple web UI for interacting with a remote clipboard. Currently supports
 using a `tmux` buffer as the clipboard backend.
 
+## Installation (pip)
+```
+pip install https://github.com/r-bar/webclip/archive/master.zip
+```
+
+## Installation (pipx)
+```
+pipx install --spec https://github.com/r-bar/webclip/archive/master.zip webclip
+```
+
 ## Running
 ```
-python -m webclip [HOST] [PORT]
+webclip [HOST] [PORT]
 ```
 
 ## Usage
