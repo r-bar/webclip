@@ -4,7 +4,7 @@ using a `tmux` buffer as the clipboard backend.
 
 ## Running
 ```
-python main.py [HOST] [PORT]
+python -m webclip [HOST] [PORT]
 ```
 
 ## Usage
