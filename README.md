@@ -1,4 +1,4 @@
-# WinClip
+# WebClip
 A simple web UI for interacting with a remote clipboard. Currently supports
 using a `tmux` buffer as the clipboard backend.
 
